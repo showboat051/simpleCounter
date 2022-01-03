@@ -1,17 +1,21 @@
 //*****************UNIT RESOURCES************************** */
 const Buttons = document.querySelectorAll('.buttons');
-const countDisplay = document.getElementById(".numDisplay");
-
-//**********VARIABLES************* */
-var cd = 0;
+const addBtn = document.querySelector('#addBtn');
+const countDisplay = document.querySelector("#numDisplay");
 
 
 // button clicks
 for (var i = 0; i < Buttons.length; i++) {
     Buttons[i].addEventListener("click" , function(e) {
-      document.getElementById(".numDisplay").value = cd;
         if(e.target.value === "+") {
-            cd++;
+            countDisplay.value = parseInt(countDisplay.value) + 1;
+            console.log("clicked");
+        }
+        if (e.target.value === "-") {
+            countDisplay.value = parseInt(countDisplay.value) - 1;
         }
     })
 }
+
+
+
