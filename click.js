@@ -10,7 +10,8 @@ for (var i = 0; i < Buttons.length; i++) {
         if(e.target.value === "+") {
             countDisplay.value = parseInt(countDisplay.value) + 1;
             if (countDisplay.value > 0) {
-                chnagetoGold();
+                document.body.style.background = "gold";
+
             }
             
         }
@@ -18,19 +19,12 @@ for (var i = 0; i < Buttons.length; i++) {
         if (e.target.value === "-") {
             countDisplay.value = parseInt(countDisplay.value) - 1;
             if (countDisplay.value < 0) {
-                changeToBlue();
+                document.body.style.background = "blue";
+
             }
             
         }
     })
 }
 
-
-function chnagetoGold () {
-    document.body.style.background = "gold";
-}
-
-function changeToBlue () {
-    document.body.style.background = "blue";
-}
 
