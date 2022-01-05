@@ -8,3 +8,31 @@
     color: cornsilk;
 }
 
+#header {
+   text-align: center;
+}
+
+#numDisplay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+#addBtn {
+    position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: scale(3);
+}
+
+#subBtn {
+    position: absolute;
+    top: 60%;
+    left: 64%;
+    transform: scale(3);
+
+}
